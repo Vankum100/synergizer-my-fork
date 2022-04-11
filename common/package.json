@@ -1,0 +1,12 @@
+{
+  "name": "@synergizer/common",
+  "version": "1.0.0",
+  "main": "dist/common.interface",
+  "types": "dist/common.interface.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}

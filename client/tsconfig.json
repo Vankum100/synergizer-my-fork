@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "ES2020",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node"
+    },
+    "references": [
+        {
+            "path": "../common"
+        }
+    ]
+}

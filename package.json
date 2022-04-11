@@ -1,0 +1,29 @@
+{
+  "name": "synergizer",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "UNLICENSED",
+  "workspaces": [
+    "common",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist && yarn common build",
+    "server": "yarn workspace @synergizer/server",
+    "client": "yarn workspace @synergizer/client",
+    "common": "yarn workspace @synergizer/common",
+    "format": "prettier --write \\\\\\\\\\\\\\\"src/**/*.ts\\\\\\\\\\\\\\\" \\\\\\\\\\\\\\\"server/test/**/*.ts\\\\\\\\\\\\\\\"",
+    "test": "jest",
+    "lint:client": "eslint ./client/src ./common/src",
+    "lint:server": "eslint ./server/src ./common/src",
+    "lint-cache:server": "eslint --cache ./server/src ./common/src",
+    "lint-fix:server": "eslint --fix ./server/src ./common/src",
+    "redis": "docker start -i redis_d || docker run --name redis_d -v /opt/redis/data:/data -p 127.0.0.1:6379:6379 redis redis-server --requirepass \"1234\""
+  },
+  "devDependencies": {
+    "@types/socket.io": "^2.1.13"
+  }
+}

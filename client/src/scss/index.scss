@@ -1,0 +1,12 @@
+$color: #1EA198;
+$text-color: white;
+body {
+  background-color: $color;
+}
+
+div {
+  color: $text-color;
+  font-size: 64px;
+  margin-top: calc(50vh - 32px);
+  text-align: center;
+}
